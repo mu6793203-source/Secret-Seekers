@@ -1,0 +1,417 @@
+:root{
+    --clr-dark:#05140a;
+    --bg-clr-android:#081402;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*index file Style*/
+body{
+    background:var(--clr-dark);
+    
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+}
+header h2{
+    color: mistyrose;
+    text-decoration: underline overline;
+    text-decoration-style:double;
+  text-decoration-color: green;
+}
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.description h3{
+    display: none;
+    opacity: 0;
+ animation:wellcome  5s linear  forwards ;
+}
+.description img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation:imgStyle 3s infinite linear ;
+}
+.name{
+    text-align: center;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    margin-top: 150px;
+    width:150px;
+    height: 50px;
+    animation:spanColor 2s infinite linear ;
+    border-radius: 1rem;
+    border-style: none;
+    border-top: 5px double lightgreen;
+    border-bottom: 5px double lightgreen;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+.ball_box{
+    display: flex;
+    gap:14rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+.ball_bounce{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    animation: ballBounce 2s infinite linear;
+}
+/*Dashborad file style*/
+.container_1{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+.back button{
+    width: 30%;
+    height: 40px;
+    color: white;
+    background-color: green;
+}
+.content_1{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    border-radius: 15px;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+}
+.container_1 button{
+    margin-top: 75px;
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+.container_1 img{
+    width: 100%;
+    height: 150px;
+}
+.back a{
+    text-decoration-line: none;
+    color: white;
+}
+.back{
+    margin-bottom: 10px;
+    text-align: center;
+}
+@media(max-width:600px){
+    /*computer button on android*/
+ .container_1  #on_android{
+    margin-top: 55px;   
+ }
+body{
+    background-color:var(--bg-clr-android) ;
+    animation:changeColor 5s infinite linear;
+}
+.container_2{
+    width:90%;
+}
+}
+/*computer size*/
+@media (min-width:1024px){
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* computer Dashborad file style*/
+.container_1{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    
+}
+.description h3{
+    display: none;
+    opacity: 0;
+ animation:wellcome  5s linear  forwards ;
+}
+/*about style*/
+.container_2{
+    width:90%;
+}
+.about_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end of about style*/
+
+/* contact style*/
+.container_3 form{
+width: 30%;
+}
+.content_1{
+    height: 250px;
+}
+.container_1 button{
+    margin-top: 29px;
+
+}
+.back button{
+     width: 10%;
+    height: 40px;
+    color: white;
+    background-color: green;
+}
+/*other apps and platform Style*/
+.container_4 .content_4{
+    width: 40%;
+    height: 300px;
+}
+.btn_other button{
+    margin-top: 110px;
+    width:120px;
+    margin-left: 1rem;
+
+}
+/*end of apps and platforms*/
+}
+
+/*About Style*/
+.container_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.content_2{
+    text-align:center;
+    width:50% ;
+    border:1px solid green ;
+}
+.content_2{
+    padding-top: 20px;
+    height: 25%;
+backdrop-filter: blur(10px);
+}
+/*end of About Style*/
+/*contact style*/
+.container_3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.content_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.content_3 input, button{
+    border-radius: 8px;
+    border: 1px solid green;
+    color: lightgreen;
+    padding-left: 10px;
+    outline: none;
+    background: none;
+    height: 40px;
+    width: 16rem;
+}
+input[placeholder]{
+    color: white;
+    font-size: medium;
+    color: lightgreen;
+}
+button{
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
+}
+.social_meadia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_meadia ul li{
+    margin-top: 40px;
+}
+form{
+    padding-top: 150px;
+    width: 80%;
+    height: 500px;
+    border-radius: 50px;
+    background-color:none;
+    animation:formDesign 3s infinite linear;
+    border:1px solid green ;
+}
+/*end of contact style*/
+
+/*other apps and platform Style*/
+.container_4{
+    display: grid;
+    grid-template-columns:repeat(1,1fr) ;
+    gap: 1rem;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.box_other{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.content_4{
+   border: 1px solid green;
+   width: 85%;
+     height: 250px;
+     border-radius: 15px;
+}
+.content_4 img{
+    margin-top: 12px;
+    width:80%;
+    height: 80px;
+}
+.btn_other{
+    position: relative;
+    display: flex;
+    gap: 0rem;
+}
+.btn_other button{
+    width:120px;
+    margin-left: 1rem;
+
+}
+/*End of Android Apps Style*/
+/*index @ keyframe*/
+@keyframes spanColor{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes formDesign{
+    0%{
+        box-shadow: 1px 1px 15px 1px blue;
+    }
+    20%{
+        box-shadow: 1px 1px 10px 1px lightgreen;
+    }
+    30%{
+        box-shadow: 1px 1px 20px 1px lightskyblue;
+    }
+    50%{
+        box-shadow: 1px 1px 10px 1px lightsalmon;
+    }
+    100%{
+        box-shadow: 1px 1px 10px 1px lightgreen;
+    }
+}
+@keyframes changeColor{
+    0%{
+        background-color: #05140a;
+    }
+    10%{
+         background-color: #061a0c;
+    }
+    30%{
+         background-color: #011b0e;
+    }
+    50%{
+         background-color: #080808;
+    }
+    70%{
+         background-color: #000214;
+         
+    }
+}
+@keyframes wellcome{
+    0%{
+        opacity: 1;
+        display: flex;
+
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale3d(0.7px);
+    }
+    70%{
+        opacity: 1;
+        transform: scale3d(1px);
+    }
+    100%{
+        opacity: 0;
+        transform: scale3d(0);
+    }
+}
+@keyframes ballBounce{
+    0%{
+      transform: translateY(0);
+      background-color: green;
+    }
+    50%{
+      transform: translateY(-200px);
+      background-color: lightblue;
+      box-shadow:1px 1px 5px 1px lightcoral ;
+    }
+    100%{
+     transform: translateY(0);
+      background-color: lightgreen;
+    }
+}
+@keyframes imgStyle{
+    0%{
+    transform: scale(1);
+     box-shadow:1px 1px 10px 1px green ;
+    }
+    50%{
+    transform: scale(0.9);
+     box-shadow:1px 1px 15px 1px green ;
+    }
+    100%{
+         transform:scale(1) ;
+        box-shadow:1px 1px 20px 1px green ;
+    }
+}
+/* index @keyframe ended*/
